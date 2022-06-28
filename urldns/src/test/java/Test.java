@@ -201,20 +201,14 @@ public class Test {
         out.close();
         in.close();
 
-
-//        int length = -1;
-//        byte[] bytes = new byte[1024];
-//        while ((length = in.read(bytes)) != -1){
-//            outputStream.write(bytes,0,length);//写的具体操作
-//        }
-//        in.close();
-//        outputStream.close();
+        //exec
 
         int responseCode = conn.getResponseCode();
 
     }
 
     public static String is2String(InputStream inputStream){
+        //byte2string
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         try {
             byte[] b = new byte[10240];
